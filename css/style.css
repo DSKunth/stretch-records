@@ -127,7 +127,6 @@ h2 {
    next avatar touches the previous song cards. */
 section {
   border-bottom: 1px solid #d9d9d9;
-  padding-bottom: 4rem;
   margin-bottom: 4rem;
   padding: 2rem;
 }
@@ -149,11 +148,9 @@ section {
 
 /* Size and center album artwork */
 .song-cards img {
-  width: 28rem;
-  height: 28rem;
-  object-fit: cover;
+  width: 100%;
   display: block;
-  margin: auto auto 1rem;
+  margin-bottom: 1rem;
 }
 
 /* Align song title and duration on one line and in opposite alignment */
