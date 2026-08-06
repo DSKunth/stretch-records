@@ -14,6 +14,7 @@ html {
 body {
   font-family: "Inter", sans-serif;
   font-size: 1.6rem;
+  background-color: #f8f8f8;
 }
 
 /* HEADER & INTRO */
@@ -125,7 +126,10 @@ h2 {
 /* Add space between artist sections. Margin-bottom creates visual separation between consecutive artist sections. Without this, the
    next avatar touches the previous song cards. */
 section {
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 4rem;
   margin-bottom: 4rem;
+  padding: 2rem;
 }
 
 /* SONG CARDS */
