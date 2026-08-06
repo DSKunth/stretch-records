@@ -1,3 +1,91 @@
+/* GLOBAL SETTINGS */
+
+/* Include padding and borders inside element widths */
+* {
+  box-sizing: border-box;
+}
+
+/* 62.5% makes 1rem = 10px for easier rem calculation */
+html {
+  font-size: 62.5%;
+}
+
+/* Set Inter as the site font and restore normal text size */
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+}
+
+/* HEADER & INTRO */
+
+/* Add breathing room inside the page header */
+header {
+  padding: 2rem;
+}
+
+/* Label's brand */
+.brand {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #222;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Small section label above the main heading */
+.kicker {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+/* Main page heading */
+h1 {
+  font-size: 4.8rem;
+  font-weight: 800;
+  color: #222;
+}
+
+/* Create the top and bottom divider lines around the intro section and separate it from the artists */
+.intro {
+  border-top: 2.5px solid #d9d9d9;
+  border-bottom: 2.5px solid #d9d9d9;
+  margin-bottom: 4rem;
+}
+
+/* Limit the line length */
+.intro p {
+  max-width: 60rem;
+}
+
+/* JUMP NAVIGATION */
+
+/* Remove default list bullets and spacing */
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Make artist links look like navigation items instead of default blue hyperlinks and add vertical spacing */
+nav a {
+  font-weight: 700;
+  color: #222;
+  text-decoration: none;
+  display: block;
+  padding: 1.6rem 0;
+}
+
+/* Create horizontal line separators between artists */
+nav li {
+  border-top: 1px solid #d9d9d9;
+}
+
+/* ARTISTS SECTIONS */
+
+/* Dislay artist photo as a circular avatar */
 .artist-avatar {
   width: 96px;
   height: 96px;
@@ -5,7 +93,79 @@
   object-fit: cover;
 }
 
+/* Adjust font size and weight of the artist name */
+h2 {
+  font-size: 3.6rem;
+  font-weight: 800;
+}
+
+/* Genre label with accent color */
+.genre {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #c96b4b;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+/* Song count and total run-time metadata */
+.artist-meta {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+/* Restrict blurbs width for readability */
+.artist-meta + p {
+  max-width: 70rem;
+}
+
+/* Add space between artist sections. Margin-bottom creates visual separation between consecutive artist sections. Without this, the
+   next avatar touches the previous song cards. */
+section {
+  margin-bottom: 4rem;
+}
+
+/* SONG CARDS */
+
+/* Arrange song cards in horizontal row */
 .song-cards {
   display: flex;
   gap: 1rem;
+}
+
+/* Card container with border and padding */
+.song-cards article {
+  width: 29rem;
+  border: 1px solid #e5e5e5;
+  padding: 0.8rem;
+}
+
+/* Size and center album artwork */
+.song-cards img {
+  width: 28rem;
+  height: 28rem;
+  object-fit: cover;
+  display: block;
+  margin: auto auto 1rem;
+}
+
+/* Align song title and duration on one line and in opposite alignment */
+.song-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+/* Remove default paragraph margins inside cards */
+.song-info p {
+  margin: 0;
+}
+
+/* Emphasize song title while leaving rank normal */
+.song-title {
+  font-weight: 700;
 }
