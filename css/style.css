@@ -15,6 +15,7 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 1.6rem;
   background-color: #f8f8f8;
+  color: #222222;
 }
 
 /* HEADER & INTRO */
@@ -28,7 +29,6 @@ header {
 .brand {
   font-size: 1.5rem;
   font-weight: 800;
-  color: #222;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   margin-bottom: 1.5rem;
@@ -47,7 +47,6 @@ header {
 h1 {
   font-size: 4.8rem;
   font-weight: 800;
-  color: #222;
 }
 
 /* Create the top and bottom divider lines around the intro section and separate it from the artists */
@@ -59,7 +58,7 @@ h1 {
 
 /* Limit the line length */
 .intro p {
-  max-width: 60rem;
+  max-width: 90rem;
 }
 
 /* JUMP NAVIGATION */
@@ -73,8 +72,8 @@ nav ul {
 /* Make artist links look like navigation items instead of default blue hyperlinks and add vertical spacing */
 nav a {
   font-weight: 700;
-  color: #222;
   text-decoration: none;
+  color: #222;
   display: block;
   padding: 1.6rem 0;
 }
@@ -85,6 +84,12 @@ nav li {
 }
 
 /* ARTISTS SECTIONS */
+
+/* Display artist sections stripes or alternating lighter/darker gray background color */
+
+.artist:nth-child(even) {
+  background-color: #f2f2f2;
+}
 
 /* Dislay artist photo as a circular avatar */
 .artist-avatar {
@@ -104,7 +109,7 @@ h2 {
 .genre {
   font-size: 1.3rem;
   font-weight: 500;
-  color: #c96b4b;
+  color: #8a5a2e;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
 }
@@ -113,20 +118,20 @@ h2 {
 .artist-meta {
   font-size: 1.3rem;
   font-weight: 500;
-  color: #6b7280;
+  color: #5f6673;
   text-transform: uppercase;
   letter-spacing: 0.05rem;
 }
 
 /* Restrict blurbs width for readability */
 .artist-meta + p {
-  max-width: 70rem;
+  max-width: 90rem;
 }
 
 /* Add space between artist sections. Margin-bottom creates visual separation between consecutive artist sections. Without this, the
    next avatar touches the previous song cards. */
 section {
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 2px solid #d9d9d9;
   margin-bottom: 4rem;
   padding: 2rem;
 }
@@ -175,9 +180,83 @@ section {
 
 footer {
   padding: 2rem;
-  border-top: 1px solid #d9d9d9;
+  border-top: 3px solid #d9d9d9;
 }
 
 footer p {
   margin-top: 0;
+}
+
+footer a:link {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+footer a:visited {
+  color: #601e88;
+}
+
+footer a:hover {
+  color: #d93025;
+  text-decoration: underline;
+}
+
+footer a:active {
+  color: #ff9900;
+}
+
+/* NEWSLETTER */
+
+h3 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+#newsletter {
+  padding: 0.8rem;
+  max-width: 60rem;
+  border-bottom: none;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  font-size: 1.6rem;
+  accent-color: #8a5a2e;
+  width: 100%;
+  max-width: 40rem;
+  padding: 1rem;
+}
+
+input:focus {
+  outline: 3px solid #e9b872;
+}
+.genre-select {
+  display: block;
+  font-size: 1.6rem;
+  padding: 0.8rem;
+  border: 1px solid #c9bda9;
+  width: 100%;
+  max-width: 40rem;
+}
+
+.genre-select:focus {
+  outline: 3px solid #e9b872;
+}
+
+button {
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+  background-color: #b00917;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
 }
