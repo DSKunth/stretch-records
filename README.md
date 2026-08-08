@@ -65,9 +65,9 @@ This project was built with accessibility in mind:
 
 ## Screenshot
 
-![Stretch Records Homepage](images/screenshot-homepage.png)
+![Stretch Records Homepage](images/screenshot-homepage.jpg)
 
-![Newsletter Section](images/screenshot-newsletter.png)
+![Newsletter Section](images/newsletter.jpg)
 
 ## Acknowledgements
 
