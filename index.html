@@ -39,7 +39,7 @@
       </div>
     </header>
     <main>
-      <section id="pinkfong">
+      <section class="artist" id="pinkfong">
         <img
           class="artist-avatar"
           src="images/pinkfong.jpeg"
@@ -110,7 +110,7 @@
         </div>
       </section>
 
-      <section id="adriano-celentano">
+      <section class="artist" id="adriano-celentano">
         <img
           class="artist-avatar"
           src="images/adriano-celentano.jpg"
@@ -195,7 +195,7 @@
         </div>
       </section>
 
-      <section id="asake">
+      <section class="artist" id="asake">
         <img
           class="artist-avatar"
           src="images/asake.jpg"
@@ -272,7 +272,7 @@
         </div>
       </section>
 
-      <section id="miyagi-andy-panda">
+      <section class="artist" id="miyagi-andy-panda">
         <img
           class="artist-avatar"
           src="images/miyagi-and-andy-panda.jpg"
@@ -349,7 +349,7 @@
         </div>
       </section>
 
-      <section id="johnny-cash">
+      <section class="artist" id="johnny-cash">
         <img
           class="artist-avatar"
           src="images/johnny-cash.jpg"
@@ -425,11 +425,61 @@
           </article>
         </div>
       </section>
+
+      <section id="newsletter">
+        <p class="kicker">Newsletter</p>
+        <h3>Hear it before the algorithm does.</h3>
+        <p>
+          One mail a month: new releases, tour dates and the odd unreleased
+          demo. Tell us what you listen to and we will keep the rest out of your
+          inbox.
+        </p>
+
+        <form action="#" method="get">
+          <div class="form-group">
+            <label for="name">Your name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Dorothy Kunth"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="dkunth@example.com"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="genre">Favorite genre</label>
+            <select class="genre-select" id="genre" name="genre" required>
+              <option value="" selected disabled>
+                -- Please choose your favorite genre --
+              </option>
+              <option value="childrens">Children's music</option>
+              <option value="italian-pop">Italian pop</option>
+              <option value="afrobeats">Afrobeats</option>
+              <option value="hip-hop">Hip-hop</option>
+              <option value="country">Country</option>
+            </select>
+          </div>
+
+          <button type="submit">SIGN ME UP</button>
+        </form>
+      </section>
     </main>
 
     <footer>
       <p>&copy; 2026 Stretch Records. All Rights Reserved.</p>
-      <a href="top">Back to top ↑</a>
+      <a href="#top">Back to top ↑</a>
     </footer>
   </body>
 </html>
